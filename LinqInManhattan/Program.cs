@@ -13,10 +13,10 @@ namespace LinqInManhattan
         public static JObject CSharpObj = JObject.Parse(File.ReadAllText(@path));
         static void Main(string[] args)
         {
-            //OutputAllNeighborhoods(NeighborhoodList());
-            //OutputAllNeighborhoodsThatHasNames(NeighborhoodList());
+            OutputAllNeighborhoods(NeighborhoodList());
+            OutputAllNeighborhoodsThatHasNames(NeighborhoodList());
             RemoveDuplicateNeighborhoods(NeighborhoodList());
-            SingleQueryFromPreviousMethods(NeighborhoodList());
+            //SingleQueryFromPreviousMethods(NeighborhoodList());
         }
 
         public static List<Properties> NeighborhoodList()
@@ -57,7 +57,7 @@ namespace LinqInManhattan
                         where p.Neighborhood != ""
                         select p.Neighborhood;
 
-            Console.WriteLine($"There are {queryWithNames.Count()} total neighborhoods with names are:\n");
+            Console.WriteLine($"There are {queryWithNames.Count()} total neighborhoods with names which are:\n");
 
             foreach (var neighborhood in queryWithNames)
             {
@@ -77,7 +77,7 @@ namespace LinqInManhattan
 
             var NoDupes = queryWithNames.GroupBy(n => n).Select(p => p.First());
 
-            Console.WriteLine($"There are {NoDupes.Count()} total neighborhoods that are unqiqe which are:\n");
+            Console.WriteLine($"There are {NoDupes.Count()} total neighborhoods that are unique which are:\n");
 
             foreach (var neighborhood in NoDupes)
             {
