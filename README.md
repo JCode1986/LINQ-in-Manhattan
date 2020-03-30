@@ -10,7 +10,7 @@ Lab09-LINQ
 
 ## Description
 ***[Tell me about your application, should be about a paragraph]***
-
+This is a C# console appilcation program that brings in data from an external file, reads the data, and filters the data based on specified values.
 
 ---
 
