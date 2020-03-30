@@ -4,9 +4,9 @@ using System.Text;
 
 namespace LinqInManhattan.Classes
 {
-    public class Geometry
+    public class RootObject
     {
         public string Type { get; set; }
-        public List<double> Coordinates { get; set; }
+        public List<Feature> Features { get; set; }
     }
 }

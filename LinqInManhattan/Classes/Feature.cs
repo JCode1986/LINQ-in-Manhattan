@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LinqInManhattan.Classes
 {
-    class Feature
+    public class Feature
     {
         public string Type { get; set; }
         public Geometry Geometry { get; set; }
