@@ -1,17 +1,17 @@
-# Console Application README Example
+# Console Application
 
 ## LINQ-in-Manhattan
 
-Lab09-LINQ
+Lab09-LINQ-Queries
 
 *Author: Joseph Hangarter*
 
 ----
 
 ## Description
-***[Tell me about your application, should be about a paragraph]***
-This is a C# console appilcation program that brings in data from an external file, reads the data, and filters the data based on specified values.
 
+* This is a C# console appilcation program that brings in data from an external file, reads the data, and filters the data based on specified values.
+* The user is given options on which query to pick (visual shown below for options).
 ---
 
 ### Getting Started
@@ -33,22 +33,10 @@ Then select and open ```LinqInManhattan.sln```
 ---
 
 ### Visuals
-***[Add screenshots of your application in action]***
 
 #### Application Start
-![Image 1]()
+![Image 1](assets/start.png)
 #### Using the Application
-![Image 1]()
-#### Application End
-![Image 1]()
-
----
-
-### Change Log
-***[The change log will list any changes made to the code base. This includes any changes from TA/Instructor feedback]***  
-1.3: *Added summary comments to the methods* - 8 Nov 2010  
-1.2: *Changed variable names to follow proper convention* - 6 Nov 2010  
-1.1: *Added a Try/Catch/Finally for Question 2* - 5 Nov 2010  
-
+![Image 1](assets/visual.png)
 
 ------------------------------
